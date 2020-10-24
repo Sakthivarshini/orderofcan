@@ -1,0 +1,850 @@
+
+<html  style="overflow: hidden;" class="supernova">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head><meta name="robots" content="noindex,follow" /><script>console.warn("Server Side Rendering => Warning: Each child in an array or iterator should have a unique \"key\" prop.  Check the top-level render call using <select>. See https://fb.me/react-warning-keys for more information.     in option     in ProductContainer     in div     in PaypalComplete");
+console.warn("Server Side Rendering => Warning: Each child in an array or iterator should have a unique \"key\" prop.  Check the top-level render call using <div>. See https://fb.me/react-warning-keys for more information.     in SubLabel     in ProductContainer     in div     in PaypalComplete");</script>
+
+<link rel="alternate" type="application/json+oembed" href="https://www.jotform.com/oembed/?format=json&url=https%3A%2F%2Fform.jotform.com%2F200443790831957" title="oEmbed Form">
+<link rel="alternate" type="text/xml+oembed" href="https://www.jotform.com/oembed/?format=xml&url=https%3A%2F%2Fform.jotform.com%2F200443790831957" title="oEmbed Form">
+
+
+
+
+<link rel="shortcut icon" href="https://cdn.jotfor.ms/favicon.ico">
+
+
+
+
+
+<link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/themes/CSS/5e6b428acc8c4e222d1beb91.css?themeRevisionID=5eb3b4ae85bd2e1e2966db96"/>
+<link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/css/styles/payment/payment_styles.css?3" />
+<link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/css/styles/payment/payment_feature.css?3" />
+<style type="text/css" id="tempThumbnail">
+  @media only screen and (max-width: 800px) {     body, .supernova { background-color: #fff !important; }
+      .form-all { box-shadow: none !important}
+  }</style>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/punycode/1.4.1/punycode.js"></script>
+<script src="https://cdn.jotfor.ms/js/vendor/jquery-1.8.0.min.js?v=3" type="text/javascript"></script>
+<script src="https://cdn.jotfor.ms/js/vendor/maskedinput.min.js?v=3" type="text/javascript"></script>
+<script src="https://cdn.jotfor.ms/js/vendor/jquery.maskedinput.min.js?v=3" type="text/javascript"></script>
+<script src="https://cdn.jotfor.ms/js/prototype.js?v=3" type="text/javascript"></script>
+<script src="https://cdn.jotfor.ms/js/vendor/json2.js?v=3" type="text/javascript"></script>
+<script src="https://cdn.jotfor.ms/js/protoplus.js?v=3" type="text/javascript"></script>
+<script src="https://cdn.jotfor.ms/js/protoplus-ui-form.js?v=3" type="text/javascript"></script>
+<script src="https://cdn.jotfor.ms/js/jotform.js?v=3" type="text/javascript"></script>
+<script src="https://cdn.jotfor.ms/js/calendarview.js?v=3" type="text/javascript"></script>
+<script src="https://cdn.jotfor.ms/js/payments/paypalcomplete.js?v=3" type="text/javascript"></script>
+<script src="https://cdn.jotfor.ms/js/payments/paymentUtils.js?v=3" type="text/javascript"></script>
+<script src="https://cdn.jotfor.ms/js/libraries/promise-polyfill.js"></script>
+<script src="https://cdn.jotfor.ms/js/payments/payment_form_embedded.js?v=3" type="text/javascript"></script>
+<script type="text/javascript">
+   JotForm.setConditions([{"action":[{"id":"action_1581690116457","visibility":"Hide","isError":false,"field":"10"}],"id":"1581690133174","index":"0","link":"Any","priority":"0","terms":[{"id":"term_1581690116457","field":"17","operator":"isEmpty","value":"","isError":false}],"type":"field"},{"action":[{"id":"action_0_1581690045611","visibility":"Hide","isError":false,"field":"10"}],"id":"1581689801697","index":"1","link":"Any","priority":"1","terms":[{"id":"term_0_1581690045611","field":"17","operator":"equals","value":"Yes","isError":false}],"type":"field"},{"action":[{"field":"11","visibility":"Show","id":"action_1_1581689802691"}],"id":"1581689543679","index":"2","link":"Any","priority":"2","terms":[{"field":"15","operator":"equals","value":"Yes"}],"type":"field"},{"action":[{"field":"18","visibility":"Show","id":"action_0_1581945983644","isError":false}],"id":"1581689543680","index":"3","link":"Any","priority":"3","terms":[{"field":"15","operator":"equals","value":"Yes","id":"term_0_1581945983644","isError":false}],"type":"field"},{"action":[{"field":"10","visibility":"Show","id":"action_3_1581689802691"}],"id":"1581689543681","index":"4","link":"Any","priority":"4","terms":[{"field":"15","operator":"equals","value":"Yes"}],"type":"field"}]);
+	JotForm.debug = true;
+	window.alert = function(){ console.log(arguments); }
+
+	JotForm.init(function(){
+      productID = {"0":"input_19_1001","1":"input_19_1004","2":"input_19_1002","3":"input_19_1003","4":"input_19_1005","5":"input_19_1006"};
+      paymentType = "product";
+      JotForm.setCurrencyFormat('USD',true, 'point');
+      JotForm.totalCounter({"input_19_1001":{"price":"80","quantityField":"input_19_quantity_1001_0"},"input_19_1004":{"price":"65","quantityField":"input_19_quantity_1004_0"},"input_19_1002":{"price":"50","quantityField":"input_19_quantity_1002_0"},"input_19_1005":{"price":"30","quantityField":"input_19_quantity_1005_0"},"input_19_1006":{"price":"20","quantityField":"input_19_quantity_1006_0"},"input_19_1003":{"price":"10","quantityField":"input_19_quantity_1003_0"}});
+      
+      $$('.form-product-custom_quantity').each(function(el, i){el.observe('blur', function(){isNaN(this.value) || this.value < 1 ? this.value = '0' : this.value = parseInt(this.value)})});
+      $$('.form-product-custom_quantity').each(function(el, i){el.observe('focus', function(){this.value == 0 ? this.value = '' : this.value})});
+      JotForm.handleProductLightbox();
+      setTimeout(function() {
+          $('input_3').hint('ex: myname@example.com');
+       }, 20);
+      JotForm.setPhoneMaskingValidator( 'input_5_full', '(###) ###-####' );
+if (window.JotForm && JotForm.accessible) $('input_18').setAttribute('tabindex',0);
+if (window.JotForm && JotForm.accessible) $('input_14').setAttribute('tabindex',0);
+	JotForm.newDefaultTheme = true;
+	JotForm.extendsNewTheme = false;
+	JotForm.newPaymentUIForNewCreatedForms = false;
+	JotForm.newPaymentUI = true;
+      JotForm.alterTexts({"couponApply":"Apply","couponBlank":"Please enter a coupon.","couponChange":"","couponEnter":"Enter coupon","couponExpired":"Coupon is expired. Please try another one.","couponInvalid":"Coupon is invalid.","couponValid":"Coupon is valid.","shippingShipping":"Shipping","taxTax":"Tax","totalSubtotal":"Subtotal","totalTotal":"Total"}, true);
+    /*INIT-END*/
+	});
+
+   JotForm.prepareCalculationsOnTheFly([null,{"name":"clickTo","qid":"1","text":"Product Order Form","type":"control_head"},{"description":"","name":"fullName2","qid":"2","text":"Full Name","type":"control_fullname"},{"description":"","name":"email3","qid":"3","subLabel":"example@example.com","text":"E-mail","type":"control_email"},{"description":"","name":"billingAddress","qid":"4","text":"Billing Address","type":"control_address"},{"description":"","name":"contactNumber","qid":"5","text":"Contact Number","type":"control_phone"},null,null,null,null,{"description":"","name":"shippingAdress","qid":"10","text":"Shipping Adress","type":"control_address"},{"description":"","name":"recipientsFull","qid":"11","text":"Recipient's Full Name","type":"control_fullname"},null,{"name":"submit","qid":"13","text":"Submit Order","type":"control_button"},{"description":"","name":"specialInstructions","qid":"14","subLabel":"","text":"Special Instructions","type":"control_textarea"},{"description":"","name":"sendGift15","qid":"15","text":"Send Gift?","type":"control_radio"},null,{"description":"","name":"isShipping17","qid":"17","text":"Is shipping address same as billing address?","type":"control_radio"},{"description":"","name":"giftMessage","qid":"18","subLabel":"","text":"Gift Message","type":"control_textarea"},{"description":"","name":"myProducts","qid":"19","text":"My Products","type":"control_paypalcomplete"},{"name":"paymentMethods","qid":"20","text":"Payment Methods","type":"control_paymentmethods"}]);
+   setTimeout(function() {
+JotForm.paymentExtrasOnTheFly([null,{"name":"clickTo","qid":"1","text":"Product Order Form","type":"control_head"},{"description":"","name":"fullName2","qid":"2","text":"Full Name","type":"control_fullname"},{"description":"","name":"email3","qid":"3","subLabel":"example@example.com","text":"E-mail","type":"control_email"},{"description":"","name":"billingAddress","qid":"4","text":"Billing Address","type":"control_address"},{"description":"","name":"contactNumber","qid":"5","text":"Contact Number","type":"control_phone"},null,null,null,null,{"description":"","name":"shippingAdress","qid":"10","text":"Shipping Adress","type":"control_address"},{"description":"","name":"recipientsFull","qid":"11","text":"Recipient's Full Name","type":"control_fullname"},null,{"name":"submit","qid":"13","text":"Submit Order","type":"control_button"},{"description":"","name":"specialInstructions","qid":"14","subLabel":"","text":"Special Instructions","type":"control_textarea"},{"description":"","name":"sendGift15","qid":"15","text":"Send Gift?","type":"control_radio"},null,{"description":"","name":"isShipping17","qid":"17","text":"Is shipping address same as billing address?","type":"control_radio"},{"description":"","name":"giftMessage","qid":"18","subLabel":"","text":"Gift Message","type":"control_textarea"},{"description":"","name":"myProducts","qid":"19","text":"My Products","type":"control_paypalcomplete"},{"name":"paymentMethods","qid":"20","text":"Payment Methods","type":"control_paymentmethods"}]);}, 20); 
+</script>
+<style>html { -webkit-overflow-scrolling: touch; overflow: scroll; }body { height: 100%; overflow: scroll; }</style>
+		<script>document.addEventListener("DOMContentLoaded", function(){
+			if (document.querySelector("div.form-all") !== null){
+				var formOffset = window.getComputedStyle(document.querySelector("div.form-all"), ":before").getPropertyValue("top");
+				if(parseInt(formOffset.replace("px", "")) < 0){
+	        		document.querySelector("div.form-all").style.top = ( -1 * parseInt(formOffset.replace("px", "")) + "px");
+	        		document.querySelector("div.form-all").style.marginBottom = (-1 * parseInt(formOffset.replace("px", "")) + "px");	
+				}
+      		}
+		}, false);setInterval(function(){ var form = document.querySelectorAll("form.jotform-form"); if(typeof form !== "undefined" && form && form.length){ form[0].setAttribute("action", "/form-templates/preview/thank-you/classic"); form[0].setAttribute("method", "post"); } }, 1000);</script></head>
+<body  style="overflow-x:hidden;">
+<form class="jotform-form" action="/form-templates/preview/thank-you/classic" method="post" name="form_200443790831957" id="200443790831957" accept-charset="utf-8" autocomplete="on">
+  <input type="hidden" name="formID" value="200443790831957" />
+  <input type="hidden" id="JWTContainer" value="" />
+  <input type="hidden" id="cardinalOrderNumber" value="" />
+  <div role="main" class="form-all" style="margin:0 auto;">
+    <ul class="form-section page-section">
+      <li id="cid_1" class="form-input-wide" data-type="control_head">
+        <div class="form-header-group  header-large">
+          <div class="header-text httal htvam">
+            <h2 id="header_1" class="form-header" data-component="header">
+              Product Order Form
+            </h1>
+          </div>
+        </div>
+      </li>
+      <li class="form-line card-3col" data-type="control_paypalcomplete" id="id_19" data-payment="true">
+        <label class="form-label form-label-top" id="label_19" for="input_19"> My Products </label>
+        <div id="cid_19" class="form-input-wide" data-layout="full">
+          <div data-wrapper-react="true">
+            <div data-wrapper-react="true">
+              <div class="filter-container">
+              </div>
+              <input type="hidden" name="simple_fpc" data-payment_type="paypalcomplete" data-component="payment1" value="19" />
+              <input type="hidden" name="payment_total_checksum" id="payment_total_checksum" data-component="payment2" />
+              <div id="image-overlay" class="overlay-content" style="display:none">
+                <img id="current-image" />
+                <span class="lb-prev-button">
+                  prev
+                </span>
+                <span class="lb-next-button">
+                  next
+                </span>
+                <span class="lb-close-button">
+                  ( X )
+                </span>
+                <span class="image-overlay-product-container">
+                  <ul class="form-overlay-item" hasicon="false" hasimages="true" iconvalue="">
+                    <li class="image-overlay-image">
+                      <img src="https://www.jotform.com/uploads/EdwardWrighton/form_files/sample6.jpg?nc=1" />
+                    </li>
+                  </ul>
+                  <ul class="form-overlay-item" hasicon="false" hasimages="true" iconvalue="">
+                    <li class="image-overlay-image">
+                      <img src="https://www.jotform.com/uploads/EdwardWrighton/form_files/sample8 copy.jpg?nc=1" />
+                    </li>
+                  </ul>
+                  <ul class="form-overlay-item" hasicon="false" hasimages="true" iconvalue="">
+                    <li class="image-overlay-image">
+                      <img src="https://www.jotform.com/uploads/EdwardWrighton/form_files/sample9.jpg?nc=1" />
+                    </li>
+                  </ul>
+                </span>
+              </div>
+              <div data-wrapper-react="true">
+                <span class="form-product-item hover-product-item on_col1 show_image show_option full_img new_ui" categories="non-categorized" pid="1001">
+                  <div data-wrapper-react="true" class="form-product-item-detail new_ui">
+                    <div class="p_col">
+                      <div class="p_checkbox">
+                        <input type="checkbox" class="form-checkbox  form-product-input" id="input_19_1001" name="q19_myProducts[][id]" value="1001" />
+                        <div class="checked">
+                        </div>
+                        <div class="select_border">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="p_image">
+                      <div class="image_area form-product-image-with-options" style="background-image:url(&quot;20.jpg?nc=1&quot;)">
+                       
+                      </div>
+                    </div>
+                    <div for="input_19_1001" class="form-product-container">
+                      <span data-wrapper-react="true">
+                        <div class="title_description">
+                          <span class="form-product-name" id="product-name-input_19_1001">
+                            20 Ltr
+                          </span>
+                          <span class="form-product-description" id="product-name-description-input_19_1001">
+                          </span>
+                        </div>
+                        <span class="form-product-details">
+                          <b>
+                            <span data-wrapper-react="true">
+                              Rs
+                              <span id="input_19_1001_price">
+                                80.00
+                              </span>
+                            </span>
+                          </b>
+                        </span>
+                      </span>
+                      <span class="form-sub-label-container" style="vertical-align:top">
+                        <label class="form-sub-label" for="input_19_quantity_1001_0" style="min-height:13px" aria-hidden="false"> Quantity </label>
+                        <span class="select_cont">
+                          <select class="form-dropdown" name="q19_myProducts[special_1001][item_0]" id="input_19_quantity_1001_0">
+                            <option value="1"> 1 </option>
+                            <option value="2"> 2 </option>
+                            <option value="3"> 3 </option>
+                            <option value="4"> 4 </option>
+                            <option value="5"> 5 </option>
+                            <option value="6"> 6 </option>
+                            <option value="7"> 7 </option>
+                            <option value="8"> 8 </option>
+                            <option value="9"> 9 </option>
+                            <option value="10"> 10 </option>
+                          </select>
+                        </span>
+                      </span>
+                      <span class="form-sub-label-container" style="vertical-align:top">
+                        <label class="form-sub-label" for="input_19_custom_1001_1" style="min-height:13px" aria-hidden="false"> Color </label>
+                        <span class="select_cont">
+                         
+                        </span>
+                      </span>
+                    </div>
+                  </div>
+                </span>
+                 
+                <div class="p_item_separator ">
+                </div>
+                <span class="form-product-item hover-product-item on_col2 show_image show_option full_img new_ui" categories="non-categorized" pid="1004">
+                  <div data-wrapper-react="true" class="form-product-item-detail new_ui">
+                    <div class="p_col">
+                      <div class="p_checkbox">
+                        <input type="checkbox" class="form-checkbox  form-product-input" id="input_19_1004" name="q19_myProducts[][id]" value="1004" />
+                        <div class="checked">
+                        </div>
+                        <div class="select_border">
+                        </div>
+                      </div>
+                    </div>
+                        <div class="p_image">
+                      <div class="image_area form-product-image-with-options" style="background-image:url(&quot;5.jpg?nc=1&quot;)">
+                        <div class="image_zoom">
+                        </div>
+                      </div>
+                    </div>
+                    <div for="input_19_1004" class="form-product-container">
+                      <span data-wrapper-react="true">
+                        <div class="title_description">
+                          <span class="form-product-name" id="product-name-input_19_1004">
+                            10 Ltr
+                          </span>
+                          <span class="form-product-description" id="product-name-description-input_19_1004">
+                          </span>
+                        </div>
+                        <span class="form-product-details">
+                          <b>
+                            <span data-wrapper-react="true">
+                              Rs
+                              <span id="input_19_1004_price">
+                                65.00
+                              </span>
+                            </span>
+                          </b>
+                        </span>
+                      </span>
+                      <span class="form-sub-label-container" style="vertical-align:top">
+                        <label class="form-sub-label" for="input_19_quantity_1004_0" style="min-height:13px" aria-hidden="false"> Quantity </label>
+                        <span class="select_cont">
+                          <select class="form-dropdown" name="q19_myProducts[special_1004][item_0]" id="input_19_quantity_1004_0">
+                            <option value="1"> 1 </option>
+                            <option value="2"> 2 </option>
+                            <option value="3"> 3 </option>
+                            <option value="4"> 4 </option>
+                            <option value="5"> 5 </option>
+                            <option value="6"> 6 </option>
+                            <option value="7"> 7 </option>
+                            <option value="8"> 8 </option>
+                            <option value="9"> 9 </option>
+                            <option value="10"> 10 </option>
+                          </select>
+                        </span>
+                      </span>
+                      <span class="form-sub-label-container" style="vertical-align:top">
+                        <label class="form-sub-label" for="input_19_custom_1004_1" style="min-height:13px" aria-hidden="false"> Color </label>
+                        <span class="select_cont">
+                         
+                        </span>
+                      </span>
+                    </div>
+                  </div>
+                </span>
+                    <div class="p_item_separator ">
+                </div>
+                <span class="form-product-item hover-product-item on_col3 show_image show_option full_img new_ui" categories="non-categorized" pid="1002">
+                  <div data-wrapper-react="true" class="form-product-item-detail new_ui">
+                    <div class="p_col">
+                      <div class="p_checkbox">
+                        <input type="checkbox" class="form-checkbox  form-product-input" id="input_19_1002" name="q19_myProducts[][id]" value="1002" />
+                        <div class="checked">
+                        </div>
+                        <div class="select_border">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="p_image">
+                      <div class="image_area form-product-image-with-options" style="background-image:url(&quot;12.jpg?nc=1&quot;)">
+                        <div class="image_zoom">
+                        </div>
+                      </div>
+                    </div>
+                    <div for="input_19_1002" class="form-product-container">
+                      <span data-wrapper-react="true">
+                        <div class="title_description">
+                          <span class="form-product-name" id="product-name-input_19_1002">
+                            5 Ltr
+                          </span>
+                          <span class="form-product-description" id="product-name-description-input_19_1002">
+                          </span>
+                        </div>
+                        <span class="form-product-details">
+                          <b>
+                            <span data-wrapper-react="true">
+                              Rs
+                              <span id="input_19_1002_price">
+                                50.00
+                              </span>
+                            </span>
+                          </b>
+                        </span>
+                      </span>
+                      <span class="form-sub-label-container" style="vertical-align:top">
+                        <label class="form-sub-label" for="input_19_quantity_1002_0" style="min-height:13px" aria-hidden="false"> Quantity </label>
+                        <span class="select_cont">
+                          <select class="form-dropdown" name="q19_myProducts[special_1002][item_0]" id="input_19_quantity_1002_0">
+                            <option value="1"> 1 </option>
+                            <option value="2"> 2 </option>
+                            <option value="3"> 3 </option>
+                            <option value="4"> 4 </option>
+                            <option value="5"> 5 </option>
+                            <option value="6"> 6 </option>
+                            <option value="7"> 7 </option>
+                            <option value="8"> 8 </option>
+                            <option value="9"> 9 </option>
+                            <option value="10"> 10 </option>
+                          </select>
+                        </span>
+                      </span>
+                      
+                        </span>
+                      </span>
+                    </div>
+                  </div>
+                </span>
+                 <div class="p_item_separator ">
+                </div>
+                <span class="form-product-item hover-product-item on_col2 show_image show_option full_img new_ui" categories="non-categorized" pid="1005">
+                  <div data-wrapper-react="true" class="form-product-item-detail new_ui">
+                    <div class="p_col">
+                      <div class="p_checkbox">
+                        <input type="checkbox" class="form-checkbox  form-product-input" id="input_19_1005" name="q19_myProducts[][id]" value="1005" />
+                        <div class="checked">
+                        </div>
+                        <div class="select_border">
+                        </div>
+                      </div>
+                    </div>
+                        <div class="p_image">
+                      <div class="image_area form-product-image-with-options" style="background-image:url(&quot;2.jpg?nc=1&quot;)">
+                        <div class="image_zoom">
+                        </div>
+                      </div>
+                    </div>
+                    <div for="input_19_1005" class="form-product-container">
+                      <span data-wrapper-react="true">
+                        <div class="title_description">
+                          <span class="form-product-name" id="product-name-input_19_1005">
+                            2 Ltr
+                          </span>
+                          <span class="form-product-description" id="product-name-description-input_19_1005">
+                          </span>
+                        </div>
+                        <span class="form-product-details">
+                          <b>
+                            <span data-wrapper-react="true">
+                              Rs
+                              <span id="input_19_1005_price">
+                                30.00
+                              </span>
+                            </span>
+                          </b>
+                        </span>
+                      </span>
+                      <span class="form-sub-label-container" style="vertical-align:top">
+                        <label class="form-sub-label" for="input_19_quantity_1005_0" style="min-height:13px" aria-hidden="false"> Quantity </label>
+                        <span class="select_cont">
+                          <select class="form-dropdown" name="q19_myProducts[special_1005][item_0]" id="input_19_quantity_1005_0">
+                            <option value="1"> 1 </option>
+                            <option value="2"> 2 </option>
+                            <option value="3"> 3 </option>
+                            <option value="4"> 4 </option>
+                            <option value="5"> 5 </option>
+                            <option value="6"> 6 </option>
+                            <option value="7"> 7 </option>
+                            <option value="8"> 8 </option>
+                            <option value="9"> 9 </option>
+                            <option value="10"> 10 </option>
+                          </select>
+                        </span>
+                      </span>
+                      <span class="form-sub-label-container" style="vertical-align:top">
+                        <label class="form-sub-label" for="input_19_custom_1005_1" style="min-height:13px" aria-hidden="false"> Color </label>
+                        <span class="select_cont">
+                         
+                        </span>
+                      </span>
+                    </div>
+                  </div>
+                </span>
+                 <div class="p_item_separator ">
+                </div>
+                <span class="form-product-item hover-product-item on_col2 show_image show_option full_img new_ui" categories="non-categorized" pid="1006">
+                  <div data-wrapper-react="true" class="form-product-item-detail new_ui">
+                    <div class="p_col">
+                      <div class="p_checkbox">
+                        <input type="checkbox" class="form-checkbox  form-product-input" id="input_19_1006" name="q19_myProducts[][id]" value="1006" />
+                        <div class="checked">
+                        </div>
+                        <div class="select_border">
+                        </div>
+                      </div>
+                    </div>
+                        <div class="p_image">
+                      <div class="image_area form-product-image-with-options" style="background-image:url(&quot;1.jpg?nc=1&quot;)">
+                        <div class="image_zoom">
+                        </div>
+                      </div>
+                    </div>
+                    <div for="input_19_1006" class="form-product-container">
+                      <span data-wrapper-react="true">
+                        <div class="title_description">
+                          <span class="form-product-name" id="product-name-input_19_1006">
+                            1 Ltr
+                          </span>
+                          <span class="form-product-description" id="product-name-description-input_19_1006">
+                          </span>
+                        </div>
+                        <span class="form-product-details">
+                          <b>
+                            <span data-wrapper-react="true">
+                              Rs
+                              <span id="input_19_1006_price">
+                                20.00
+                              </span>
+                            </span>
+                          </b>
+                        </span>
+                      </span>
+                      <span class="form-sub-label-container" style="vertical-align:top">
+                        <label class="form-sub-label" for="input_19_quantity_1006_0" style="min-height:13px" aria-hidden="false"> Quantity </label>
+                        <span class="select_cont">
+                          <select class="form-dropdown" name="q19_myProducts[special_1006][item_0]" id="input_19_quantity_1006_0">
+                            <option value="1"> 1 </option>
+                            <option value="2"> 2 </option>
+                            <option value="3"> 3 </option>
+                            <option value="4"> 4 </option>
+                            <option value="5"> 5 </option>
+                            <option value="6"> 6 </option>
+                            <option value="7"> 7 </option>
+                            <option value="8"> 8 </option>
+                            <option value="9"> 9 </option>
+                            <option value="10"> 10 </option>
+                          </select>
+                        </span>
+                      </span>
+                      <span class="form-sub-label-container" style="vertical-align:top">
+                        <label class="form-sub-label" for="input_19_custom_1006_1" style="min-height:13px" aria-hidden="false"> Color </label>
+                        <span class="select_cont">
+                         
+                        </span>
+                      </span>
+                    </div>
+                  </div>
+                </span> 
+                <div class="p_item_separator ">
+                </div>
+                <span class="form-product-item hover-product-item on_col3 show_image show_option new_ui" categories="non-categorized" pid="1003">
+                  <div data-wrapper-react="true" class="form-product-item-detail new_ui">
+                    <div class="p_col">
+                      <div class="p_checkbox">
+                        <input type="checkbox" class="form-checkbox  form-product-input" id="input_19_1003" name="q19_myProducts[][id]" value="1003" />
+                        <div class="checked">
+                        </div>
+                        <div class="select_border">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="p_image">
+                      <div class="image_area form-product-image-with-options" style="background-image:url(&quot;13.jpg?nc=1&quot;)">
+                        <div class="image_zoom">
+                        </div>
+                      </div>
+                    </div>
+                    <div for="input_19_1003" class="form-product-container">
+                      <span data-wrapper-react="true">
+                        <div class="title_description">
+                          <span class="form-product-name" id="product-name-input_19_1003">
+                            1/2 Ltr
+                          </span>
+                          <span class="form-product-description" id="product-name-description-input_19_1003">
+                          </span>
+                        </div>
+                        <span class="form-product-details">
+                          <b>
+                            <span data-wrapper-react="true">
+                              Rs
+                              <span id="input_19_1003_price">
+                                10.00
+                              </span>
+                            </span>
+                          </b>
+                          
+                        </span>
+                      </span>
+                      <span class="form-sub-label-container" style="vertical-align:top">
+                        <label class="form-sub-label" for="input_19_quantity_1003_0" style="min-height:13px" aria-hidden="false"> Quantity </label>
+                        <span class="select_cont">
+                          <select class="form-dropdown" name="q19_myProducts[special_1003][item_0]" id="input_19_quantity_1003_0">
+                            <option value="1"> 1 </option>
+                            <option value="2"> 2 </option>
+                            <option value="3"> 3 </option>
+                            <option value="4"> 4 </option>
+                            <option value="5"> 5 </option>
+                            <option value="6"> 6 </option>
+                            <option value="7"> 7 </option>
+                            <option value="8"> 8 </option>
+                            <option value="9"> 9 </option>
+                            <option value="10"> 10 </option>
+                          </select>
+                              </span>
+                      </span>
+                      <span class="form-sub-label-container" style="vertical-align:top">
+                        <label class="form-sub-label" for="input_19_custom_1006_1" style="min-height:13px" aria-hidden="false"> Color </label>
+                        <span class="select_cont">
+                      
+                        </span>
+                      </span>
+                    </div>
+                  </div>
+                </span>
+                <div class="payment_footer new_ui ">
+                  <div class="total_area">
+                    <div class="form-payment-total">
+                      <div id="total-text">
+                        Total
+                      </div>
+                      <div class="form-payment-price">
+                        <span data-wrapper-react="true">
+                          Rs
+                          <span id="payment_total">
+                            0.00
+                          </span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_fullname" id="id_2">
+        <label class="form-label form-label-top" id="label_2" for="first_2"> Full Name </label>
+        <div id="cid_2" class="form-input-wide" data-layout="full">
+          <div data-wrapper-react="true">
+            <span class="form-sub-label-container" style="vertical-align:top" data-input-type="first">
+              <input type="text" id="first_2" name="q2_fullName2[first]" class="form-textbox" size="10" value="" data-component="first" aria-labelledby="label_2 sublabel_2_first" />
+              <label class="form-sub-label" for="first_2" id="sublabel_2_first" style="min-height:13px" aria-hidden="false"> First Name </label>
+            </span>
+            <span class="form-sub-label-container" style="vertical-align:top" data-input-type="last">
+              <input type="text" id="last_2" name="q2_fullName2[last]" class="form-textbox" size="15" value="" data-component="last" aria-labelledby="label_2 sublabel_2_last" />
+              <label class="form-sub-label" for="last_2" id="sublabel_2_last" style="min-height:13px" aria-hidden="false"> Last Name </label>
+            </span>
+          </div>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_email" id="id_3">
+        <label class="form-label form-label-top" id="label_3" for="input_3"> E-mail </label>
+        <div id="cid_3" class="form-input-wide" data-layout="half">
+          <span class="form-sub-label-container" style="vertical-align:top">
+            <input type="email" id="input_3" name="q3_email3" class="form-textbox validate[Email]" style="width:310px" size="310" value="" placeholder="ex: myname@example.com" data-component="email" aria-labelledby="label_3 sublabel_input_3" />
+            <label class="form-sub-label" for="input_3" id="sublabel_input_3" style="min-height:13px" aria-hidden="false"> example@example.com </label>
+          </span>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_phone" id="id_5">
+        <label class="form-label form-label-top" id="label_5" for="input_5_full"> Contact Number </label>
+        <div id="cid_5" class="form-input-wide" data-layout="half">
+          <span class="form-sub-label-container" style="vertical-align:top">
+            <input type="tel" id="input_5_full" name="q5_contactNumber[full]" data-type="mask-number" class="mask-phone-number form-textbox validate[Fill Mask]" style="width:310px" data-masked="true" value="" placeholder="(000) 000-0000" data-component="phone" aria-labelledby="label_5" />
+            <label class="form-sub-label is-empty" for="input_5_full" id="sublabel_5_masked" style="min-height:13px" aria-hidden="false">  </label>
+          </span>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_address" id="id_4">
+        <label class="form-label form-label-top" id="label_4" for="input_4_addr_line1"> Billing Address </label>
+        <div id="cid_4" class="form-input-wide" data-layout="full">
+          <div summary="" class="form-address-table jsTest-addressField">
+            <div class="form-address-line-wrapper jsTest-address-line-wrapperField">
+              <span class="form-address-line form-address-street-line jsTest-address-lineField">
+                <span class="form-sub-label-container" style="vertical-align:top">
+                  <input type="text" id="input_4_addr_line1" name="q4_billingAddress[addr_line1]" class="form-textbox form-address-line" value="" data-component="address_line_1" aria-labelledby="label_4 sublabel_4_addr_line1" required="" />
+                  <label class="form-sub-label" for="input_4_addr_line1" id="sublabel_4_addr_line1" style="min-height:13px" aria-hidden="false"> Street Address </label>
+                </span>
+              </span>
+            </div>
+            <div class="form-address-line-wrapper jsTest-address-line-wrapperField">
+              <span class="form-address-line form-address-street-line jsTest-address-lineField">
+                <span class="form-sub-label-container" style="vertical-align:top">
+                  <input type="text" id="input_4_addr_line2" name="q4_billingAddress[addr_line2]" class="form-textbox form-address-line" value="" data-component="address_line_2" aria-labelledby="label_4 sublabel_4_addr_line2" />
+                  <label class="form-sub-label" for="input_4_addr_line2" id="sublabel_4_addr_line2" style="min-height:13px" aria-hidden="false"> Street Address Line 2 </label>
+                </span>
+              </span>
+            </div>
+            <div class="form-address-line-wrapper jsTest-address-line-wrapperField">
+              <span class="form-address-line form-address-city-line jsTest-address-lineField ">
+                <span class="form-sub-label-container" style="vertical-align:top">
+                  <input type="text" id="input_4_city" name="q4_billingAddress[city]" class="form-textbox form-address-city" value="" data-component="city" aria-labelledby="label_4 sublabel_4_city" required="" />
+                  <label class="form-sub-label" for="input_4_city" id="sublabel_4_city" style="min-height:13px" aria-hidden="false"> City </label>
+                </span>
+              </span>
+              <span class="form-address-line form-address-state-line jsTest-address-lineField ">
+                <span class="form-sub-label-container" style="vertical-align:top">
+                  <input type="text" id="input_4_state" name="q4_billingAddress[state]" class="form-textbox form-address-state" value="" data-component="state" aria-labelledby="label_4 sublabel_4_state" required="" />
+                  <label class="form-sub-label" for="input_4_state" id="sublabel_4_state" style="min-height:13px" aria-hidden="false"> State / Province </label>
+                </span>
+              </span>
+            </div>
+            <div class="form-address-line-wrapper jsTest-address-line-wrapperField">
+              <span class="form-address-line form-address-zip-line jsTest-address-lineField ">
+                <span class="form-sub-label-container" style="vertical-align:top">
+                  <input type="text" id="input_4_postal" name="q4_billingAddress[postal]" class="form-textbox form-address-postal" value="" data-component="zip" aria-labelledby="label_4 sublabel_4_postal" required="" />
+                  <label class="form-sub-label" for="input_4_postal" id="sublabel_4_postal" style="min-height:13px" aria-hidden="false"> Postal / Zip Code </label>
+                </span>
+              </span>
+              <span class="form-address-line form-address-country-line jsTest-address-lineField ">
+                <span class="form-sub-label-container" style="vertical-align:top">
+                 
+                  <label class="form-sub-label" for="input_4_country" id="sublabel_4_country" style="min-height:13px" aria-hidden="false"> Country </label>
+                </span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_radio" id="id_17">
+      
+            </span>
+          </div>
+        </div>
+      </li>
+      <li class="form-line form-field-hidden" style="display:none;" data-type="control_address" id="id_10">
+        <label class="form-label form-label-top" id="label_10" for="input_10_addr_line1"> Shipping Adress </label>
+        <div id="cid_10" class="form-input-wide" data-layout="full">
+          <div summary="" class="form-address-table jsTest-addressField">
+            <div class="form-address-line-wrapper jsTest-address-line-wrapperField">
+              <span class="form-address-line form-address-street-line jsTest-address-lineField">
+                <span class="form-sub-label-container" style="vertical-align:top">
+                  <input type="text" id="input_10_addr_line1" name="q10_shippingAdress[addr_line1]" class="form-textbox form-address-line" value="" data-component="address_line_1" aria-labelledby="label_10 sublabel_10_addr_line1" required="" />
+                  <label class="form-sub-label" for="input_10_addr_line1" id="sublabel_10_addr_line1" style="min-height:13px" aria-hidden="false"> Street Address </label>
+                </span>
+              </span>
+            </div>
+            <div class="form-address-line-wrapper jsTest-address-line-wrapperField">
+              <span class="form-address-line form-address-street-line jsTest-address-lineField">
+                <span class="form-sub-label-container" style="vertical-align:top">
+                  <input type="text" id="input_10_addr_line2" name="q10_shippingAdress[addr_line2]" class="form-textbox form-address-line" value="" data-component="address_line_2" aria-labelledby="label_10 sublabel_10_addr_line2" />
+                  <label class="form-sub-label" for="input_10_addr_line2" id="sublabel_10_addr_line2" style="min-height:13px" aria-hidden="false"> Street Address Line 2 </label>
+                </span>
+              </span>
+            </div>
+            <div class="form-address-line-wrapper jsTest-address-line-wrapperField">
+              <span class="form-address-line form-address-city-line jsTest-address-lineField ">
+                <span class="form-sub-label-container" style="vertical-align:top">
+                  <input type="text" id="input_10_city" name="q10_shippingAdress[city]" class="form-textbox form-address-city" value="" data-component="city" aria-labelledby="label_10 sublabel_10_city" required="" />
+                  <label class="form-sub-label" for="input_10_city" id="sublabel_10_city" style="min-height:13px" aria-hidden="false"> City </label>
+                </span>
+              </span>
+              <span class="form-address-line form-address-state-line jsTest-address-lineField ">
+                <span class="form-sub-label-container" style="vertical-align:top">
+                  <input type="text" id="input_10_state" name="q10_shippingAdress[state]" class="form-textbox form-address-state" value="" data-component="state" aria-labelledby="label_10 sublabel_10_state" required="" />
+                  <label class="form-sub-label" for="input_10_state" id="sublabel_10_state" style="min-height:13px" aria-hidden="false"> State / Province </label>
+                </span>
+              </span>
+            </div>
+            <div class="form-address-line-wrapper jsTest-address-line-wrapperField">
+              <span class="form-address-line form-address-zip-line jsTest-address-lineField ">
+                <span class="form-sub-label-container" style="vertical-align:top">
+                  <input type="text" id="input_10_postal" name="q10_shippingAdress[postal]" class="form-textbox form-address-postal" value="" data-component="zip" aria-labelledby="label_10 sublabel_10_postal" required="" />
+                  <label class="form-sub-label" for="input_10_postal" id="sublabel_10_postal" style="min-height:13px" aria-hidden="false"> Postal / Zip Code </label>
+                </span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </li>
+    
+          </div>
+        </div>
+      </li>
+      <li class="form-line form-field-hidden" style="display:none;" data-type="control_fullname" id="id_11">
+        <label class="form-label form-label-top" id="label_11" for="first_11"> Recipient's Full Name </label>
+        <div id="cid_11" class="form-input-wide" data-layout="full">
+          <div data-wrapper-react="true">
+            <span class="form-sub-label-container" style="vertical-align:top" data-input-type="first">
+              <input type="text" id="first_11" name="q11_recipientsFull[first]" class="form-textbox" size="10" value="" data-component="first" aria-labelledby="label_11 sublabel_11_first" />
+              <label class="form-sub-label" for="first_11" id="sublabel_11_first" style="min-height:13px" aria-hidden="false"> First Name </label>
+            </span>
+            <span class="form-sub-label-container" style="vertical-align:top" data-input-type="last">
+              <input type="text" id="last_11" name="q11_recipientsFull[last]" class="form-textbox" size="15" value="" data-component="last" aria-labelledby="label_11 sublabel_11_last" />
+              <label class="form-sub-label" for="last_11" id="sublabel_11_last" style="min-height:13px" aria-hidden="false"> Last Name </label>
+            </span>
+          </div>
+        </div>
+      </li>
+      <li class="form-line form-field-hidden" style="display:none;" data-type="control_textarea" id="id_18">
+        <label class="form-label form-label-top form-label-auto" id="label_18" for="input_18"> Gift Message </label>
+        <div id="cid_18" class="form-input-wide" data-layout="full">
+          <textarea id="input_18" class="form-textarea" name="q18_giftMessage" style="width:648px;height:163px" data-component="textarea" aria-labelledby="label_18"></textarea>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_textarea" id="id_14">
+        <label class="form-label form-label-top" id="label_14" for="input_14"> Special Instructions </label>
+        <div id="cid_14" class="form-input-wide" data-layout="full">
+          <textarea id="input_14" class="form-textarea" name="q14_specialInstructions" style="width:648px;height:163px" data-component="textarea" aria-labelledby="label_14"></textarea>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_paymentmethods" id="id_20">
+        <label class="form-label form-label-top" id="label_20" for="input_20"> Payment Methods </label>
+        <div id="cid_20" class="form-input-wide" data-layout="full">
+          <div class="payment-methods-area">
+            <div data-wrapper-react="true" class="paypalcomplete-payment-wrapper" data-sandbox="enabled" data-currency="USD" data-merchantid="76ZZ45EN8XB9W" data-billing-address="" data-auth-only="No" data-show-spb="true" data-show-card-fields="true">
+              <div id="paypal-commerce-platform-container">
+                <div class="paypal-toggle-buttons">
+                  <div class="paypal-toggle">
+                    <div id="paypal-card-fields">
+                      <div class="payment-method-container" data-id="paypal-card-fields">
+                        <input type="radio" class="form-radio" name="paypal-payment-method" data-id="paypal-card-fields" id="paypal-card-fields-input" />
+                        <label for="paypal-card-fields-input">
+                          <span class="CC_ico">
+                          </span>
+                          Debit or Credit Card
+                        </label>
+                      </div>
+                    </div>
+                    <div id="paypal-smart-buttons">
+                      <div class="payment-method-container" data-id="paypal-smart-buttons">
+                        <input type="radio" class="form-radio" name="paypal-payment-method" data-id="paypal-smart-buttons" id="paypal-smart-buttons-input" />
+                        <label for="paypal-smart-buttons-input">  </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="paypal-toggle-content " render-paypal-type="">
+                  <div class="content-area">
+                    <div id="paypal-credit-card-fields">
+                      <div class="paypal-commerce-platform">
+                        <div class="paypal-content">
+                          <table class="form-address-table payment-form-table" style="border:0" cellPadding="0" cellSpacing="0">
+                            <tbody>
+                              <tr>
+                                <td width="50%">
+                                  <span class="form-sub-label-container" style="vertical-align:top">
+                                    <input type="text" id="19_cc_firstName" name="q19_myProducts[cc_firstName]" class="form-textbox cc_firstName" size="20" value="" data-component="cc_firstName" />
+                                    <label class="form-sub-label" for="19_cc_firstName" id="sublabel_cc_firstName" style="min-height:13px;margin:0 0 3px 0" aria-hidden="false"> First Name </label>
+                                  </span>
+                                </td>
+                                <td width="50%">
+                                  <span class="form-sub-label-container" style="vertical-align:top">
+                                    <input type="text" id="19_cc_lastName" name="q19_myProducts[cc_lastName]" class="form-textbox cc_lastName" size="20" value="" data-component="cc_lastName" />
+                                    <label class="form-sub-label" for="19_cc_lastName" id="sublabel_cc_lastName" style="min-height:13px;margin:0 0 3px 0" aria-hidden="false"> Last Name </label>
+                                  </span>
+                                </td>
+                              </tr>
+                              <tr class="if_cc_field">
+                                <td width="50%">
+                                  <span class="form-sub-label-container" style="vertical-align:top">
+                                    <div class="form-textbox cc_numberMount cc_number">
+                                    </div>
+                                    <label class="form-sub-label" for="19_cc_number" id="sublabel_cc_number" style="min-height:13px;margin:0 0 3px 0" aria-hidden="false"> Credit Card Number </label>
+                                  </span>
+                                </td>
+                                <td width="50%">
+                                  <span class="form-sub-label-container" style="vertical-align:top">
+                                    <div class="form-textbox cc_ccvMount cc_ccv">
+                                    </div>
+                                    <label class="form-sub-label" for="19_cc_ccv" id="sublabel_cc_ccv" style="min-height:13px;margin:0 0 3px 0" aria-hidden="false"> Security Code </label>
+                                  </span>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td width="50%">
+                                  <span class="form-sub-label-container" style="vertical-align:top">
+                                    <div class="form-textbox cc_cardExpiryMount cc_card_expiry">
+                                    </div>
+                                    <label class="form-sub-label" for="19_cc_card_expiry" id="sublabel_cc_card_expiry" style="min-height:13px;margin:0 0 3px 0" aria-hidden="false"> Card Expiration </label>
+                                  </span>
+                                </td>
+                                <td width="50%">
+                                  <tr style="display:none">
+                                    <td>
+                                      <input id="paypal_complete_dummy" style="display:none" />
+                                    </td>
+                                  </tr>
+                                </td>
+                              </tr>
+                              <div id="payments-sdk__contingency-lightbox">
+                              </div>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="paypal-spb-area">
+                      <p>Please click one of the PayPal options to complete payment and <b>submit</b> the form.</p>
+                      <div id="paypal-button-container" style="pointer-events:">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <input type="hidden" id="input_20_payment_method" name="q20_paymentMethods[payment_method]" class="" value="" data-component="payment_method" />
+          </div>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_button" id="id_13">
+        <div id="cid_13" class="form-input-wide" data-layout="full">
+          <div data-align="center" class="form-buttons-wrapper form-buttons-center   jsTest-button-wrapperField">
+            <button id="input_13" type="submit" class="form-submit-button submit-button jf-form-buttons jsTest-submitField" data-component="button" data-content="">
+              Submit Order
+            </button>
+          </div>
+        </div>
+      </li>
+      <li style="display:none">
+        Should be Empty:
+        <input type="text" name="website" value="" />
+      </li>
+    </ul>
+  </div>
+  <input type="hidden" class="simple_spc" id="simple_spc" name="simple_spc" value="200443790831957" />
+  <script type="text/javascript">
+  var all_spc = document.querySelectorAll("form[id='200443790831957'] .si" + "mple" + "_spc");
+for (var i = 0; i < all_spc.length; i++)
+{
+  all_spc[i].value = "200443790831957-200443790831957";
+}
+  </script>
+</form></body>
+
+
+<script>
+	document.addEventListener("DOMContentLoaded", function(event) {
+		if( typeof window.top.FormTemplate !== "undefined" ){
+			window.top.FormTemplate.hideFormLoaderIndicators();
+		} 
+		if( typeof window.parent.Embed !== "undefined" ){
+	      	window.parent.Embed.hideFormLoaderIndicators();
+	    } 
+		if( document.querySelectorAll("div.formFooter").length ){
+			document.querySelector("div.formFooter").remove();	
+		}
+	});
+</script>
+</html>
